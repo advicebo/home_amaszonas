@@ -1,0 +1,1516 @@
+/*-------------------------------------------------   CONFIG  -------------------------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+	-webkit-transition: all 200ms linear;
+	-moz-transition: all 200ms linear;
+	-o-transition: all 200ms linear;bg
+	-ms-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+ul{
+  list-style: none;
+}
+html, body{
+	font-family: 'Open Sans';
+	font-weight: 300;
+	height: auto;
+	width: 100%;
+}
+
+.blue{ border-color: #2b5797 !important; }
+.bg-blue{ background-color: #2b5797 !important; }
+
+.bg-red{ background-color: #c8312b !important; }
+.red{ border-color: #c8312b !important; }
+
+.bg-green{ background-color: #1e7145 !important; }
+.green{ border-color: #1e7145 !important; }
+
+.bg-yellow{ background-color: #ffc01d !important; }
+.yellow{ border-color: #ffc01d !important; }
+
+.bg-violet{ background-color: #7e3878 !important; }
+.violet{ border-color: #7e3878 !important; }
+
+.bg-orange{ background-color: #da532c !important; }
+.orange{ border-color: #da532c !important; }
+
+
+/*-------------------------------------------------   LAYOUT  -------------------------------------------------*/
+header{
+	background-image: url(../images/patterns/ps.jpg);
+	border-bottom: 4px #a8a8a8 solid;
+	height: 90px;
+	width: 100%;
+}
+nav {
+	background-image: url(../images/patterns/gray.png);
+	border-bottom: 4px #a8a8a8 solid;
+	height: 54px;
+	width: 100%;
+}
+nav ul{
+	height: 100%;
+	margin: 0 auto;
+	width: 920px;
+}
+section#slider{
+	/*background: gray;*/	
+	background-image: url(../images/patterns/ps.jpg);
+	height: 420px;
+	width: 100%;
+}
+section#tiles{
+	background: black;
+	height: 135px;
+	width: 100%;
+}
+footer{
+  border-top: 3px solid gray;
+	background-image: url(../images/patterns/footer.jpg);
+	height: 100px;
+	width: 100%;
+}
+/*-------------------------------------------------   STYLES  -------------------------------------------------*/
+
+
+header #logo{
+	/*background: blue;*/
+	height: 100%;
+	width: 50%;
+  float: left;
+}
+header #icons{
+  /*background: blue;*/
+  height: 100%;
+  float: left;
+  position: relative;
+  width: 50%;
+}
+
+header #icons #tools{
+  /*background: black;*/
+  display: block;
+  height: 40px;
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  width: 280px;
+}
+
+header #icons #tools i{
+  display: block;
+  color: white;
+  font-size: 23px;
+  padding-top: 3px;
+  text-align: center;
+  width: 100%;
+}
+
+header #icons span{ 
+  border-radius: 2px;
+  bottom: -17px;
+  color: white;
+  display: none; 
+  font-size: 9px;
+  font-weight: 800;;
+  background: rgba(0,0,0,0.9);
+  left: -5px;
+  padding-bottom: 2px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  width: 60px;
+}
+
+header #icons  ul{
+  height: 100%; width: 100%;
+}
+
+
+header #icons #tools li{
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  border: 2px solid gray;
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  float: left;
+  position: relative;
+  width: 45px;
+}
+
+header #icons #tools li:hover{
+  background: black;
+  border-color: #2e2e2e; 
+}
+
+header #icons #tools li:hover span{
+  color: #fcf3ab; 
+  display: block;
+}
+
+
+header #icons #languages li{
+  border: 1px solid black;  
+  cursor: pointer;
+  display: block;
+  margin-left: 5px;
+  float: left;
+  height: 100%;
+  width: 37px;
+}
+
+header #icons #languages{
+  /*background: green;*/
+  display: block;
+  height: 20px;
+  position: absolute;
+  bottom: 47px;
+  right: 0;
+  width: 140px;
+}
+header #icons #languages img{
+  height: 100%;
+  width: 100%;
+}
+
+header #logo span{
+	display: none;
+}
+
+header #logo img{
+	height: 70px;
+	margin-top: 10px;
+	width: 640px;
+}
+
+
+nav ul li{
+	background-color: rgba(0,0,0,0.3);
+	border: black 2px solid;
+	color: white;
+  cursor: pointer;
+	display: block;
+	float: left;
+	font-family: 'aaargh';
+	font-size: 17px;
+	height: 100%;
+	padding: 14px 0px;
+	margin-left: 2px;
+	text-align: center;
+	text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+	width: 150px;
+}
+
+nav ul li:hover{
+  background: black;
+}
+
+#slider *{
+	display: block;
+	float: left;
+}
+
+#slider #form{
+	height: 100%;
+	width: 33%;
+}
+#slider #slide{
+	border-left: 4px gray solid;
+	border-right: 4px gray solid;
+	height: 100%;
+	width: 53%;
+}
+#slider #bonus{
+	height: 100%;
+	width: 14%;
+}
+
+#form #buttons{
+	float: left;
+	height: 100%;
+	width: 15%;
+}
+
+	#form #buttons a{
+		border-radius: 0 15px 15px 0;
+		cursor: pointer;
+		background: #2e2e2e;;
+		margin-bottom: 2px;
+		height: 16%;
+		width: 100%;	
+		position: relative;
+	}
+	#form #buttons a span{
+		color: white;
+		display: none;
+		position: absolute;
+		text-transform: uppercase;	
+		opacity: 0;
+		width: 100%;
+	}
+	#form #buttons a i{
+		float: right;
+    display: block;
+		font-size:190%;
+		color: white;
+		padding: 0.5em 0.5em;
+		text-align: center;
+    width: 100%;
+	}
+	#form #buttons a:hover{
+		background: black;
+		width: 100%;
+	}
+
+	#form #buttons a:hover span{
+		display: block;
+		border-radius: 5px;
+		padding: 21px 10px;
+		width: 300px;
+		background: rgba(0,0,0,0.9);
+		height: 60px;
+		margin-top: 6px;
+		position: absolute;
+		text-shadow: 1px 1px 3px black, -1px 1px 3px black, 1px -1px 3px black, -1px -1px 3px black;
+		text-align: center;
+		z-index: 200;		
+		margin-left: 65px;
+		opacity: 1;
+	}
+	#form #buttons span{
+		float: left;
+		height: 17%;
+		width: 100%;
+	}
+	#form #buttons a:first-child{
+		margin-top: 30%;
+	}
+#form #area{
+	/*background: gray;*/
+	float: left;
+	height: 100%;
+	width: 85%;
+}
+
+#form #area form{
+	display: block;
+	font-family: 'Open Sans';
+	font-weight: 300;
+	height: 100%;
+	margin-left: 7%;
+  position: relative;
+	width: 85%;
+}
+
+#form #area form table{
+	margin-top: 15px;
+}
+
+#form #area form table tr{
+	border-bottom: 1px gray dotted;
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+#form #area form table tr td{
+	/*border: 1px gray solid;*/
+	border-collapse: collapse;
+	height: auto;
+	height: 40px;
+	width: 50%;
+}
+#form #area form table tr td label{
+	text-align: right;
+	padding-top: 7px;
+	padding-left: 15px;
+}
+#form #area form table tr td  .pip{
+	padding-left: 50px;
+}
+div.select, div.datepicker{
+	margin-top: 3px;
+	width: 120px;
+}
+
+#area form .long{
+	border: 2px gray solid;
+	margin: 3.5% 0 0 2%;
+	float: left;
+	height: 80px;
+	width: 31%;
+	position: relative;
+}
+
+#area form .long:last-child{
+	margin-left: 1000px;
+}
+
+#secure{
+  position: absolute;;
+  height: 20%;
+  width: 40%;
+  bottom: -10px;
+  left: -85px;
+}
+
+#area form .go{
+	background: #008287;
+  float: right;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	border: 2px gray solid;
+	margin: 9px 0 0 4px;
+	width: 40%;
+	height: 50px;
+}
+#area form .go:hover{
+	background: black;
+}
+#area form .go i{
+	display: block;
+	font-style: normal;
+	padding: 10px 0;
+	font-size: 17px;
+	width: 100%;
+}
+#area form .long .title{
+	background: gray;
+	color: white;
+	display: block;
+	font-size: 12px;	
+	font-weight: 800;
+	height: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+}
+
+#area form .long .central{
+	background: white;
+	height: 56px;
+	width: 70px;
+}
+#area form .long .central {
+	font-size: 45px;
+	text-align: center;	
+}
+#area form .long .up{
+	cursor: pointer;
+	background: #cecece;
+	font-size: 15px;
+	color: white;
+	width: 25px;
+	position: absolute;
+	text-align: center;
+	top: 20px;
+	padding: 3px 0;
+	right: 2px;
+}
+#area form .long .text{
+	background: #ffc01d;
+	color: white;
+	height: 20px;
+	width: 25px;
+	font-size: 13px;
+	font-weight: 800;
+	text-align: center;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+}
+#area form .long .up:hover, #area form .long .down:hover{
+	background: black;
+}
+
+#area form .long .down{
+	cursor: pointer;
+	background: #cecece;
+	font-size: 15px;
+	color: white;
+	width: 25px;
+	text-align: center;
+	position: absolute;
+	bottom: 2px;
+	padding: 3px 0;
+	right: 2px;	
+}
+#slide .carousel, #slide .carousel img{
+	height: 100%;
+	width: 100%;
+}
+
+
+#bonus .offers{
+	border: 3px #2e2e2e solid;
+	height: 24%;
+	margin: 1.5% 0 0 2%;
+	width: 96%;
+}
+#bonus .offers span{
+	display: block;
+	float: left;
+}
+
+#bonus .offers .icon{
+	background: #2e2e2e;
+	height: 100%;
+  position: relative;
+	width: 30%;
+}
+	.offers .icon img{
+		color: white;
+		display: block;
+		width: 75%;
+		margin: 70% 0 0 12%;
+	}
+.offers .icon span{
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  width: 95%;
+}
+  .offers .icon .up{
+    top: 20%;
+  }
+  .offers .icon .down{
+    top: 65%;
+  }
+
+#bonus .offers .title, #bonus .offers .content{
+	display: block;
+	float: right;
+	width: 70%;
+}
+
+#bonus .offers .title{
+	background: rgba(0,0,0,0.2);
+	color: white;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding: 10px  0;
+
+}
+#bonus .offers .content{
+	color: white;
+	font-size: 12px;
+	padding: 10px;
+	text-align: center;
+}
+
+
+
+
+
+
+.carousel {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
+.carousel .slides {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-left: 4px 
+}
+.carousel .slides .slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.carousel .slides .slide .image img {
+  width: 100%;
+  height: 100%;
+}
+.carousel .slides .slide .description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+.carousel .control {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 40px;
+  height: 45px;
+  margin-top: -20px;
+  font-size: 48pt;
+  font-weight: 100;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  opacity: .75;
+}
+.carousel .control.right {
+  left: auto;
+  right: 15px;
+}
+.carousel .control:hover {
+  opacity: 1;
+}
+.carousel .markers > ul {
+  margin-left: 0;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-top: 10px;
+}
+.carousel .markers li {
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+.carousel .markers li a {
+  width: 32px;
+  height: 6px;
+  background-color: red;
+  display: block;
+  float: left;
+}
+.carousel .markers li.active a {
+  background-color: #1e1e1e;
+}
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+/*FOOTER*/
+
+footer #afiliates, footer #directions, footer #zocial{
+  height: 100%;
+  float: left;
+}
+
+
+footer #afiliates{
+  /*background: black;*/  
+  width: 33%;
+}
+
+footer #afiliates img{
+  border: 3px solid #2e2e2e;
+  border-radius: 10px;
+  display: block;
+  float: right;
+  height: 70%;
+  margin: 3.5% 2% 0 0;
+  width: 40%;
+}
+
+
+footer #directions{
+  /*background: gray;*/
+  width: 50%;
+}
+
+footer #directions .col{
+  /*border:  1px solid white; */
+  color: gray;
+  float: left;
+  font-weight: 300;
+  height: 100%;
+  padding: 16px 0 0 10px;
+  width: 60%;
+}
+
+footer #directions .col h6{
+  font-weight: 300; 
+}
+footer #directions .col a{
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+}
+
+footer #directions .col h6 .left{
+  color: white;
+}
+
+span.red{color: #e10e26; font-weight: bold;}
+span.green{color: #0d7638; font-weight: bold;}
+
+
+footer #zocial{
+  /*background: white;*/
+  width: 17%;
+}
+
+footer #zocial figure{
+  cursor: pointer;
+  height: 50%;
+  float: right;
+  margin: 9% 0 0 -1px;
+  width: 20%;
+}
+
+footer #zocial figure:first-child{
+  margin-right: 20%;
+}
+
+footer #zocial figure:hover img{
+  /*border-color: black;*/
+}
+
+footer #zocial figure:hover figcaption{
+  background: black;
+}
+
+footer #zocial figure img{
+  /*border: 2px solid #2e2e2e;*/
+  height: 100%;
+  width: 100%;
+}
+footer #zocial figure figcaption{
+  background: #2e2e2e;
+  color: white;
+  font-size: 11px;
+  height: 20px;
+  margin-top: -5px;
+  text-align: center;
+  width: 100%;
+}
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+.carousel {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
+.carousel .slides {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.carousel .slides .slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.carousel .slides .slide.image img {
+  width: 100%;
+  height: 100%;
+}
+.carousel .slides .slide .description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  height: 70px;
+}
+.carousel .control {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 40px;
+  height: 45px;
+  margin-top: -20px;
+  font-size: 48pt;
+  font-weight: 100;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  opacity: .75;
+}
+.carousel .control.right {
+  left: auto;
+  right: 15px;
+}
+.carousel .control:hover {
+  opacity: 1;
+}
+.carousel .markers > ul {
+  margin-left: 0;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-top: 10px;
+}
+.carousel .markers li {
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+.carousel .markers li a {
+  width: 32px;
+  height: 6px;
+  background-color: red;
+  display: block;
+  margin-top: -35px;
+  float: left;
+}
+.carousel .markers li.active a {
+  background-color: #1e1e1e;
+}
+
+
+
+.input-control.checkbox {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.input-control.checkbox > input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+.input-control.checkbox .helper {
+  padding-left: 23px;
+  position: relative;
+}
+.input-control.checkbox .helper:before {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  content: "";
+  text-indent: -9999px;
+  border: 2px #d9d9d9 solid;
+  z-index: 1;
+  opacity: 1;
+  top: 0;
+  left: 0;
+}
+.input-control.checkbox input[type="checkbox"]:checked ~ .helper:after {
+  position: absolute;
+  display: block;
+  content: "\e08a";
+  font-size: 10pt;
+  heigth: 14px;
+  width: 14px;
+  line-height: 14px;
+  z-index: 2;
+  top: 50%;
+  margin-top: -6px;
+  left: 0;
+  margin-left: 4px;
+  font-family: iconFont;
+}
+.input-control.checkbox input[type="checkbox"]:not(:checked) ~ .helper:after {
+  display: none;
+}
+.input-control.checkbox input[type="checkbox"]:disabled ~ .helper:before {
+  cursor: default;
+  background: #e6e6e6;
+}
+.input-control.checkbox input[type=checkbox]:disabled ~ .helper:after {
+  color: #8a8a8a;
+}
+.input-control.checkbox input[type=checkbox]:focus ~ .helper:before {
+  border-color: #919191;
+}
+.input-control.checkbox:hover input[type=checkbox]:not(:disabled) ~ .helper:before {
+  border-color: #919191;
+}
+.input-control.checkbox:active input[type=checkbox]:not(:disabled) ~ .helper:before {
+  border-color: #1e1e1e;
+}
+.input-control.intermediate input[type="checkbox"] ~ .helper:after {
+  position: absolute !important;
+  display: block !important;
+  content: "" !important;
+  color: #1a1a1a !important;
+  z-index: 2 !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  left: 5px !important;
+  margin-left: 0 !important;
+  top: 50% !important;
+  margin-top: -5px !important;
+  background-color: #1a1a1a !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+.input-control.intermediate input[type="checkbox"]:disabled ~ .helper:after {
+  background-color: #9a9a9a !important;
+}
+.input-control.radio {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.input-control.radio > input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.input-control.radio .helper {
+  padding-left: 30px;
+  padding-top: 2px;
+  position: relative;
+}
+.input-control.radio .helper:before {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  content: "";
+  text-indent: -9999px;
+  border: 2px #d9d9d9 solid;
+  z-index: 1;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+}
+.input-control.radio input[type="radio"]:checked ~ .helper:after {
+  position: absolute;
+  display: block;
+  content: "";
+  color: #1a1a1a;
+  z-index: 2;
+  font-size: 16px;
+  font-weight: bold;
+  left: 5px;
+  margin-left: 1px;
+  top: 50%;
+  margin-top: -4px;
+  background-color: #1a1a1a;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+}
+.input-control.radio input[type="radio"]:disabled ~ .helper:before {
+  cursor: default;
+  background: #e6e6e6;
+}
+.input-control.radio input[type="radio"]:disabled ~ .helper:after {
+  background-color: #8a8a8a;
+}
+.input-control.radio input[type="radio"]:focus ~ .helper:before {
+  border-color: #919191;
+}
+.input-control.radio:hover input:not(:disabled) ~ .helper:before {
+  border-color: #919191;
+}
+.input-control.radio:active input:not(:disabled) ~ .helper:before {
+  border-color: #1e1e1e;
+}
+.input-control.switch {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.input-control.switch > input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+.input-control.switch .helper {
+  padding-left: 52px;
+  position: relative;
+}
+.input-control.switch .helper:before {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  display: block;
+  content: "";
+  width: 43px;
+  height: 16px;
+  outline: 2px #a6a6a6 solid;
+  border: 1px #fff solid;
+  cursor: pointer;
+  background: #008287;
+  margin-left: 2px;
+  z-index: 1;
+}
+.input-control.switch input[type="checkbox"] ~ .helper:after {
+  position: absolute;
+  left: 36px;
+  top: 2px;
+  display: block;
+  content: "";
+  width: 9px;
+  height: 16px;
+  outline: 2px #333 solid;
+  border: 1px #333 solid;
+  cursor: pointer;
+  background: #333;
+  z-index: 2;
+}
+.input-control.switch input[type="checkbox"]:not(:checked) ~ .helper:after {
+  left: 2px !important;
+}
+.input-control.switch input[type="checkbox"]:not(:checked) ~ .helper:before {
+  background: #a6a6a6 !important;
+}
+.input-control.switch input[type="checkbox"]:disabled ~ .helper:after {
+  background: #a6a6a6 !important;
+  outline: 2px #a6a6a6 solid !important;
+  border: 1px #a6a6a6 solid !important;
+}
+.input-control.switch input[type="checkbox"]:focus ~ .helper:before {
+  outline: 2px #747474 solid !important;
+}
+.input-control.switch input[type="checkbox"]:disabled ~ .helper:before {
+  cursor: default !important;
+  background: #e0e0e0 !important;
+  outline: 2px #ccc solid !important;
+}
+.input-control > input[type=text],
+.input-control > input[type=email],
+.input-control > input[type=url],
+.input-control > input[type=phone],
+.input-control > input[type=password],
+.input-control > input[type=number],
+.input-control > input[type=time],
+.input-control > select,
+.input-control > textarea {
+  border: 1px #bababa solid;
+  width: 100%;
+  padding: 4px 6px 6px 5px;
+  background-color: #fff;
+  outline: 0;
+  margin-right: 0px;
+  min-height: 32px;
+  position: relative;
+}
+.input-control > input[type=text].with-helper,
+.input-control > input[type=email].with-helper,
+.input-control > input[type=url].with-helper,
+.input-control > input[type=phone].with-helper,
+.input-control > input[type=password].with-helper,
+.input-control > input[type=number].with-helper,
+.input-control > input[type=time].with-helper,
+.input-control > select.with-helper,
+.input-control > textarea.with-helper {
+  padding: 4px 32px 6px 5px;
+}
+.input-control > input[type=text]:disabled,
+.input-control > input[type=email]:disabled,
+.input-control > input[type=url]:disabled,
+.input-control > input[type=phone]:disabled,
+.input-control > input[type=password]:disabled,
+.input-control > input[type=number]:disabled,
+.input-control > input[type=time]:disabled,
+.input-control > select:disabled,
+.input-control > textarea:disabled {
+  background-color: #eaeaea;
+}
+.input-control > input[type=text]:focus,
+.input-control > input[type=email]:focus,
+.input-control > input[type=url]:focus,
+.input-control > input[type=phone]:focus,
+.input-control > input[type=password]:focus,
+.input-control > input[type=number]:focus,
+.input-control > input[type=time]:focus,
+.input-control > select:focus,
+.input-control > textarea:focus {
+  border-color: #000;
+}
+.input-control > input[type=text]::-ms-clear,
+.input-control > input[type=email]::-ms-clear,
+.input-control > input[type=url]::-ms-clear,
+.input-control > input[type=phone]::-ms-clear,
+.input-control > input[type=number]::-ms-clear,
+.input-control > input[type=time]::-ms-clear {
+  display: none;
+}
+.input-control > input[type=password]::-ms-reveal {
+  display: none;
+}
+.input-control > select {
+  padding-right: 5px;
+}
+.input-control > textarea {
+  padding-right: 5px;
+  min-height: 100px;
+}
+.input-control.text input[type=text]:not(:focus) ~ [class^="btn-"],
+.input-control.password input[type=text]:not(:focus) ~ [class^="btn-"],
+.input-control.text input[type=password]:not(:focus) ~ [class^="btn-"],
+.input-control.password input[type=password]:not(:focus) ~ [class^="btn-"],
+.input-control.text input[type=email]:not(:focus) ~ [class^="btn-"],
+.input-control.password input[type=email]:not(:focus) ~ [class^="btn-"],
+.input-control.text input[type=phone]:not(:focus) ~ [class^="btn-"],
+.input-control.password input[type=phone]:not(:focus) ~ [class^="btn-"],
+.input-control.text input[type=number]:not(:focus) ~ [class^="btn-"],
+.input-control.password input[type=number]:not(:focus) ~ [class^="btn-"],
+.input-control.text input[type=time]:not(:focus) ~ [class^="btn-"],
+.input-control.password input[type=time]:not(:focus) ~ [class^="btn-"],
+.input-control.text input[type=url]:not(:focus) ~ [class^="btn-"],
+.input-control.password input[type=url]:not(:focus) ~ [class^="btn-"],
+.input-control.text input[type=text]:not(:focus) ~ .helper,
+.input-control.password input[type=text]:not(:focus) ~ .helper,
+.input-control.text input[type=password]:not(:focus) ~ .helper,
+.input-control.password input[type=password]:not(:focus) ~ .helper,
+.input-control.text input[type=email]:not(:focus) ~ .helper,
+.input-control.password input[type=email]:not(:focus) ~ .helper,
+.input-control.text input[type=phone]:not(:focus) ~ .helper,
+.input-control.password input[type=phone]:not(:focus) ~ .helper,
+.input-control.text input[type=number]:not(:focus) ~ .helper,
+.input-control.password input[type=number]:not(:focus) ~ .helper,
+.input-control.text input[type=time]:not(:focus) ~ .helper,
+.input-control.password input[type=time]:not(:focus) ~ .helper,
+.input-control.text input[type=url]:not(:focus) ~ .helper,
+.input-control.password input[type=url]:not(:focus) ~ .helper {
+  display: none;
+}
+.input-control.text input[type=text]:focus ~ [class^="btn-"],
+.input-control.password input[type=text]:focus ~ [class^="btn-"],
+.input-control.text input[type=password]:focus ~ [class^="btn-"],
+.input-control.password input[type=password]:focus ~ [class^="btn-"],
+.input-control.text input[type=email]:focus ~ [class^="btn-"],
+.input-control.password input[type=email]:focus ~ [class^="btn-"],
+.input-control.text input[type=phone]:focus ~ [class^="btn-"],
+.input-control.password input[type=phone]:focus ~ [class^="btn-"],
+.input-control.text input[type=number]:focus ~ [class^="btn-"],
+.input-control.password input[type=number]:focus ~ [class^="btn-"],
+.input-control.text input[type=time]:focus ~ [class^="btn-"],
+.input-control.password input[type=time]:focus ~ [class^="btn-"],
+.input-control.text input[type=url]:focus ~ [class^="btn-"],
+.input-control.password input[type=url]:focus ~ [class^="btn-"],
+.input-control.text input[type=text]:focus ~ .helper,
+.input-control.password input[type=text]:focus ~ .helper,
+.input-control.text input[type=password]:focus ~ .helper,
+.input-control.password input[type=password]:focus ~ .helper,
+.input-control.text input[type=email]:focus ~ .helper,
+.input-control.password input[type=email]:focus ~ .helper,
+.input-control.text input[type=phone]:focus ~ .helper,
+.input-control.password input[type=phone]:focus ~ .helper,
+.input-control.text input[type=number]:focus ~ .helper,
+.input-control.password input[type=number]:focus ~ .helper,
+.input-control.text input[type=time]:focus ~ .helper,
+.input-control.password input[type=time]:focus ~ .helper,
+.input-control.text input[type=url]:focus ~ .helper,
+.input-control.password input[type=url]:focus ~ .helper {
+  display: block;
+}
+.input-control.text input[type=text]:not(:focus) ~ [class^="btn-"]:active,
+.input-control.password input[type=text]:not(:focus) ~ [class^="btn-"]:active,
+.input-control.text input[type=password]:not(:focus) ~ [class^="btn-"]:active,
+.input-control.password input[type=password]:not(:focus) ~ [class^="btn-"]:active,
+.input-control.text input[type=email]:not(:focus) ~ [class^="btn-"]:active,
+.input-control.password input[type=email]:not(:focus) ~ [class^="btn-"]:active,
+.input-control.text input[type=phone]:not(:focus) ~ [class^="btn-"]:active,
+.input-control.password input[type=phone]:not(:focus) ~ [class^="btn-"]:active,
+.input-control.text input[type=number]:not(:focus) ~ [class^="btn-"]:active,
+.input-control.password input[type=number]:not(:focus) ~ [class^="btn-"]:active,
+.input-control.text input[type=time]:not(:focus) ~ [class^="btn-"]:active,
+.input-control.password input[type=time]:not(:focus) ~ [class^="btn-"]:active,
+.input-control.text input[type=url]:not(:focus) ~ [class^="btn-"]:active,
+.input-control.password input[type=url]:not(:focus) ~ [class^="btn-"]:active,
+.input-control.text input[type=text]:not(:focus) ~ .helper:active,
+.input-control.password input[type=text]:not(:focus) ~ .helper:active,
+.input-control.text input[type=password]:not(:focus) ~ .helper:active,
+.input-control.password input[type=password]:not(:focus) ~ .helper:active,
+.input-control.text input[type=email]:not(:focus) ~ .helper:active,
+.input-control.password input[type=email]:not(:focus) ~ .helper:active,
+.input-control.text input[type=phone]:not(:focus) ~ .helper:active,
+.input-control.password input[type=phone]:not(:focus) ~ .helper:active,
+.input-control.text input[type=number]:not(:focus) ~ .helper:active,
+.input-control.password input[type=number]:not(:focus) ~ .helper:active,
+.input-control.text input[type=time]:not(:focus) ~ .helper:active,
+.input-control.password input[type=time]:not(:focus) ~ .helper:active,
+.input-control.text input[type=url]:not(:focus) ~ .helper:active,
+.input-control.password input[type=url]:not(:focus) ~ .helper:active {
+  display: block;
+}
+.input-control input[type=text] ~ .btn-search,
+.input-control input[type=text] ~ .btn-date {
+  display: block !important;
+}
+.input-control {
+  margin-right: 0px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.input-control.text .helper,
+.input-control.password .helper,
+.input-control.text [class^="btn-"],
+.input-control.password [class^="btn-"] {
+  font-family: "iconFont" !important;
+  background: #fff;
+  top: -10px;
+  width: 26px !important;
+  height: 27px !important;
+  min-width: 26px !important;
+  min-height: 27px !important;
+  cursor: pointer;
+  color: #000;
+  position: absolute;
+  left: 100%;
+  margin-left: -28px;
+  display: block;
+  border: 1px #fff solid;
+}
+.input-control.text .helper:before,
+.input-control.password .helper:before,
+.input-control.text [class^="btn-"]:before,
+.input-control.password [class^="btn-"]:before {
+  font-size: 10pt !important;
+  position: absolute;
+  color: #000 !important;
+  font-family: "iconFont" !important;
+  left: 6px;
+  top: 4px;
+}
+.input-control.text .helper:hover,
+.input-control.password .helper:hover,
+.input-control.text [class^="btn-"]:hover,
+.input-control.password [class^="btn-"]:hover {
+  background: #d9d9d9;
+}
+.input-control.text .helper:active,
+.input-control.password .helper:active,
+.input-control.text [class^="btn-"]:active,
+.input-control.password [class^="btn-"]:active {
+  background-color: #000;
+}
+.input-control.text .helper:active:before,
+.input-control.password .helper:active:before,
+.input-control.text [class^="btn-"]:active:before,
+.input-control.password [class^="btn-"]:active:before {
+  color: #fff;
+}
+.input-control.password .helper,
+.input-control.password .btn-reveal {
+  background: #ffffff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzM2OTY1MkEwNkVGMTFFMjhDQkNEODZFQTYyRTI5MDciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzM2OTY1MkIwNkVGMTFFMjhDQkNEODZFQTYyRTI5MDciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozMzY5NjUyODA2RUYxMUUyOENCQ0Q4NkVBNjJFMjkwNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozMzY5NjUyOTA2RUYxMUUyOENCQ0Q4NkVBNjJFMjkwNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ps2lOfsAAAFMSURBVHjaYvz//z8DrQATAw0BTQ1nwSUxe/ZsBSCVD8QBQKyAJv0AiDcA8cTU1NQHuMxgRA9zoKECQKofiBOIdOACIC4EWvIBr+FAgw2A1H4gFiAxBEAGOwItuIDVcBwGf4C6bCOaYf5QnwngswBsODQo7qMpbgTiCdi8ixR8BUBcj2aBIkwPLEL70QxOBCpYgC8coAY0AC0BReh8qDAsvhJBHGZpaWkFqNdhAOTaTmID29jY+MK5c+dAhlpAhQyA/IVA8Q8s0OSG7K1GNO8HQF2jgJQMQaljA1oQIscByMxCUCZyQE5WyGEMNXg9WjoHsddD5ZCDCNn3DrAcaoAkiJ4q+vGECLrcQSS2Ad7sD00NCngMV8CS1vHnUDTD3xNIMYxkFVzQcHyAR+8DSkvFQjLlCBsOTW6BaK4EsQPRkiJxpeJoTTS0DQcIMACNJ32B6TbHUQAAAABJRU5ErkJggg%3D%3D) 50% no-repeat;
+}
+.input-control.password .helper:hover,
+.input-control.password .btn-reveal:hover {
+  background: #ffffff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzM2OTY1MjIwNkVGMTFFMjhDQkNEODZFQTYyRTI5MDciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzM2OTY1MjMwNkVGMTFFMjhDQkNEODZFQTYyRTI5MDciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozMzU3NURCRDA2RUYxMUUyOENCQ0Q4NkVBNjJFMjkwNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozMzU3NURCRTA2RUYxMUUyOENCQ0Q4NkVBNjJFMjkwNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhJl5kAAAAEMSURBVHja7FXtEYIwDKVO0BE6AiPoBDICo7BBR9AVnMARcIOyAWxQk6PlakwC/uC888zdOwpJXl/SD0yMsdrLDtWO9h1yY4wDeEAARIKQfE7InQfY8xJgFnBB10ZgrCUc85N8rAHjB8QZmFNTcpNfoBQkvifl2SbAFXAjlZ8BLRN7Ar4HtmVRnoKo4o6Wy7SvYyqwL21hetxKpMwkLbMGS3sccfqtxMUEnnC4TO5pWSSxAYQiBscN06KRCkTrJdWJWNohjaK+X3ZNgSNJCAp50ITgN+2E2rQeklHf9MYh3YqJfNTuDsg10vFXlYMTlQwK97B6c61ssc0Lunq3KBOoW1EiN/8/0W+RPwUYACoftglrEejbAAAAAElFTkSuQmCC) 50% no-repeat;
+}
+.input-control.text .helper:before,
+.input-control.text .btn-clear:before {
+  content: "\e089";
+}
+.input-control.text .btn-search:before {
+  content: "\e041";
+}
+.input-control.text .btn-date:before {
+  content: "\e020";
+}
+label {
+  font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 11pt;
+  letter-spacing: 0.02em;
+  line-height: 14pt;
+  font-smooth: always;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+fieldset {
+  position: relative;
+  margin-top: 30px;
+  border: 2px #eaeaea solid;
+  padding: 10px;
+}
+fieldset legend {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 11pt;
+  letter-spacing: 0.02em;
+  line-height: 14pt;
+  font-smooth: always;
+  color: #cfcfcf;
+  position: absolute;
+  top: -25px;
+  left: -10px;
+}
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 9pt;
+  font-smooth: always;
+  line-height: 11pt;
+  font-size: 14px;
+  display: inline-block;
+  padding: 4px 12px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle !important;
+  min-width: 90px;
+  min-height: 32px;
+  height: 32px;
+  background-color: #ccc;
+  border: 1px transparent solid;
+  color: #353535;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-raduis: 0;
+  cursor: pointer;
+  width: auto;
+  *zoom: 1;
+  border-radius: 0;
+}
+input[type=button] [class^="icon-"],
+input[type=reset] [class^="icon-"],
+input[type=submit] [class^="icon-"],
+input[type=button] [class*=" icon-"],
+input[type=reset] [class*=" icon-"],
+input[type=submit] [class*=" icon-"] {
+  vertical-align: -10%;
+  font-size: 1.2em;
+  display: inline-block;
+}
+input[type=button] [class^="icon-"].icon-large,
+input[type=reset] [class^="icon-"].icon-large,
+input[type=submit] [class^="icon-"].icon-large,
+input[type=button] [class*=" icon-"].icon-large,
+input[type=reset] [class*=" icon-"].icon-large,
+input[type=submit] [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+input[type=button].big [class^="icon-"],
+input[type=reset].big [class^="icon-"],
+input[type=submit].big [class^="icon-"],
+input[type=button].big [class*=" icon-"],
+input[type=reset].big [class*=" icon-"],
+input[type=submit].big [class*=" icon-"] {
+  font-size: 1.3333333333333333em;
+}
+input[type=button] [class^="icon-"],
+input[type=reset] [class^="icon-"],
+input[type=submit] [class^="icon-"],
+input[type=button] [class*=" icon-"],
+input[type=reset] [class*=" icon-"],
+input[type=submit] [class*=" icon-"] {
+  margin-right: 5px;
+}
+input[type=button] [class^="icon-"].right,
+input[type=reset] [class^="icon-"].right,
+input[type=submit] [class^="icon-"].right,
+input[type=button] [class*=" icon-"].right,
+input[type=reset] [class*=" icon-"].right,
+input[type=submit] [class*=" icon-"].right {
+  margin-left: 5px;
+  margin-right: auto;
+}
+input[type=button]:before,
+input[type=reset]:before,
+input[type=submit]:before,
+input[type=button]:after,
+input[type=reset]:after,
+input[type=submit]:after {
+  display: table;
+  content: "";
+}
+input[type=button]:after,
+input[type=reset]:after,
+input[type=submit]:after {
+  clear: both;
+}
+input[type=button].standart,
+input[type=reset].standart,
+input[type=submit].standart {
+  min-width: 90px;
+  min-height: 32px;
+}
+input[type=button]:active,
+input[type=reset]:active,
+input[type=submit]:active,
+input[type=button].default:active,
+input[type=reset].default:active,
+input[type=submit].default:active {
+  top: 1px;
+  left: 1px;
+}
+input[type=button]:disabled,
+input[type=reset]:disabled,
+input[type=submit]:disabled,
+input[type=button].disabled,
+input[type=reset].disabled,
+input[type=submit].disabled {
+  background-color: #eaeaea;
+  color: #bebebe;
+  cursor: not-allowed;
+}
+input[type=button].default,
+input[type=reset].default,
+input[type=submit].default {
+  background-color: #008287;
+  color: #fff;
+}
+input[type=button]:focus,
+input[type=reset]:focus,
+input[type=submit]:focus {
+  outline: 0;
+  border: 1px #353535 dotted;
+}
+input[type=button].mini,
+input[type=reset].mini,
+input[type=submit].mini {
+  min-height: 20px;
+  min-width: 20px;
+  height: 14px;
+  font-size: .75em !important;
+  padding-top: 0px !important;
+}
+input[type=button].big,
+input[type=reset].big,
+input[type=submit].big {
+  min-height: 48px;
+  height: 48px;
+  font-size: 1.2em;
+}
+input[type=submit] {
+  background-color: #008287;
+  color: #fff;
+}
+
+select{
+	font-size: 14px;
+}
+
+aside table{
+  width: 80%;
+  margin: 0 auto;
+}
+aside table tr td.low{
+  width: 40%;
+}
+aside table tr td{
+  display: inline-block;
+  text-align: center;
+  width: 50px;
+  padding: 0;
+}
+
+aside table tr td span{
+  display: block;
+  margin-top: -5px;
+}
+
+aside table tr td input{
+  margin-top: 8px;
+  border: 1px #bababa solid;
+  width: 150px;
+  padding: 4px 6px 6px 5px;
+  background-color: #fff;
+  outline: 0;
+  margin-right: 32px;
+  min-height: 32px;
+  position: relative;
+
+}
+
+aside table tr td textarea{
+  border: 1px solid gray;
+  display: block;
+  margin: 15% 0 0 30%;
+  height: 50%;
+  width: 250px;
+}
+
+html {
+  background-color: #222;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+  background-repeat: repeat;
+}
+
+aside{
+  background: black;
+}
+h1, 
+h2 {
+  font-size: 24px;
+}
+
+p {
+  margin: 10px 0 10px 0;
+  font-size: 16px;
+  line-height: 1.32;
+}
+
+a {
+  color: #7aa76d;
+  text-decoration: none;
+
+  -webkit-transition: 0.15s color ease;
+     -moz-transition: 0.15s color ease;
+      -ms-transition: 0.15s color ease;
+       -o-transition: 0.15s color ease;
+          transition: 0.15s color ease;
+}
+  a:hover {
+    color: #91cd85;
+  }
+
+small {
+  display: block;
+  margin-top: 15px;
+  padding-top: 15px;
+  color: #333;
+  font-size: 0.85em;
+  border-top: 1px dashed #ccc;
+
+  -webkit-text-size-adjust: none;
+}
+
+button {
+  border: 0px;
+  padding: 8px 10px;
+  margin: 15px 5px;
+  border-radius: 1px;
+  display: block;
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  background: #7aa76d;
+  font-size: 15px;
+
+  -webkit-transition: 0.15s background ease;
+     -moz-transition: 0.15s background ease;
+      -ms-transition: 0.15s background ease;
+       -o-transition: 0.15s background ease;
+          transition: 0.15s background ease;
+}
+  button:hover {
+    background: #91cd85;
+  }
+  button:active {
+    background: #60895a;
+  }
+  button+button {
+    margin-left: 5px;
+  }
+
+.sharing {
+  margin-top: 50px;
+}
+

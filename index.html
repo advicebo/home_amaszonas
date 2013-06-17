@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+	<meta charset='utf-8'>
+	<head><title>Amaszonas WEB</title>
+		<!-- ======================================== CSS  ======================================== -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/modern.css"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/the-dark.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/avgrund.css">
+		
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+
+		<!-- ======================================== JAVASCRIPT ======================================== -->
+		<script type="text/javascript" src="js/less.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/underscore.js"></script>
+		<script type="text/javascript" src="js/backbone.js"></script>
+		<script type="text/javascript" src="js/carousel.js"></script>
+		<script type="text/javascript" src="js/tile-slider.js"></script>
+		<script type="text/javascript" src="js/tile-drag.js"></script>
+		<script type="text/javascript" src="js/avgrund.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		
+	</head>
+<body>
+	<header>
+		<div id="logo">	
+			<img src="images/LogoBase.png">
+			<span>Amaszonas Web</span>
+		</div>
+		<div id="icons">
+			<ul id="tools">
+				<li><i class="icon-home"></i><span>Inicio</span></li>
+				<li><i class="icon-comments-4"></i><span>Consultar</span></li>
+				<li><i class="icon-printer"></i><span>Imprimir</span></li>
+				<li><i class="icon-share-2"></i><span>Sitio</span></li>
+				<li><i class="icon-location"></i><span>Oficinas</span></li>
+				<li id='mailer'><i class="icon-mail"></i><span>Contacto</span></li>
+			</ul>
+			<ul id="languages">
+				<li><span>Español</span><img src="images/flags/es.gif" /></li>
+				<li><span>English</span><img src="images/flags/us.gif" /></li>
+				<li><span>French</span><img src="images/flags/fr.gif" /></li>
+			</ul>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li>INICIO</li>
+			<li>DESTINOS</li>
+			<li>SERVICIOS</li>
+			<li>TOURS</li>
+			<a href="list.html"><li>OFERTAS</li></a>
+			<li>USUARIOS</li>
+		</ul>
+	</nav>
+	<section id="slider">
+		<article id="form">
+			<div id="buttons">
+				<span></span>
+				<a><span>Compra en Linea</span><i class="icon-cart-2"></i></a>
+				<a><span>Paga tu reservación</span><i class="icon-diary"></i></a>
+				<a><span>Web Check-in</span><i class="icon-chrome"></i></a>
+				<a><span>Amaszonas Tours</span><i class="icon-earth"></i></a>
+				<span></span>
+			</div>
+			<div id="area">
+				<form>
+					<table>
+						<tr>
+							<td><label>Número de vuelo</label></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<label class="input-control radio">
+							        <input type="radio" name="op" />
+							        <span class="helper">Ida y vuelta</span>
+							    </label>							
+							</td>
+							<td>
+								<label class="input-control radio">
+							        <input type="radio" name="op" />
+							        <span class="helper">Solo ida</span>
+							    </label>								
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="pip">Desde</label>
+							</td>
+							<td>
+								<div class="input-control select">
+							        <select>
+							            <option>Cusco (CUZ) </option>
+							            <option>Tarija (TJA) </option>
+							            <option>Sucre (SRE) </option>
+							            <option>La Paz (LPB) </option>
+							        </select>
+							    </div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="pip">Hasta</label>
+							</td>
+							<td>
+								<div class="input-control select">
+							        <select>
+							            <option>Tarija (TJA) </option>
+							            <option>Cusco (CUZ) </option>
+							            <option>Sucre (SRE) </option>
+							            <option>La Paz (LPB) </option>
+							        </select>
+							    </div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="pip">Partida</label>
+							</td>
+							<td>
+								<div class="input-control text datepicker" data-role="datepicker">
+							        <input type="text" />
+							        <button class="btn-date"></button>
+							    </div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="pip">Retorno</label>
+							</td>
+							<td>
+								<div class="input-control text datepicker" data-role="datepicker">
+							        <input type="text" />
+							        <button class="btn-date"></button>
+							    </div>
+							</td>
+						</tr>
+					</table>
+					<div class="long blue">
+						<span class="title bg-blue">Adultos</span>
+						<i class="icon-user-3 central"></i>
+						<i class="icon-arrow-up up"></i>
+						<span class="text">0</span>
+						<i class="icon-arrow-down down"></i>
+					</div>
+					<div class="long red">
+						<span class="title bg-red">Niños</span>
+						<i class="icon-user central"></i>
+						<i class="icon-arrow-up up"></i>
+						<span class="text">0</span>
+						<i class="icon-arrow-down down"></i>
+					</div>
+					<div class="long green">
+						<span class="title bg-green">Bebes</span>
+						<i class="icon-github-4 central"></i>
+						<i class="icon-arrow-up up"></i>
+						<span class="text">0</span>
+						<i class="icon-arrow-down down"></i>
+					</div>
+					<img src="images/norton_secure.png" id="secure"/>
+					<a class="go" href=""><i class="icon-search">Buscar</i></a>
+					<a class="go" href=""><i class="icon-help">Ayuda</i></a>
+				</form>
+
+			</div>
+		</article>
+		<article id="slide">
+			<div class="carousel" data-role="carousel" data-param-effect="fade" data-param-direction="left" data-param-period="3000"  data-param-markers="off">
+		        <div class="slides">
+		            <div class="slide image" id="slide1">
+		                <img src="images/slides/s1.jpg"/>
+		                <div class="description">
+		                    Amaszonas es una línea aérea de Bolivia que opera vuelos regulares y charter en avionetas de baja capacidad en el norte, noreste y suroeste del país.
+		                </div>
+		            </div>
+		 
+		            <div class="slide mixed" id="slide2">
+		                <img src="images/slides/s2.jpg"/>
+		                <div class="description">
+		                    Los Yungas es una región geográfica de Bolivia ubicada en el departamento de La Paz, al noreste de la ciudad de La Paz.
+		                </div>
+		            </div>
+
+		            <div class="slide mixed" id="slide2">
+		                <img src="images/slides/s3.jpg"/>
+		                <div class="description">
+		                     Copacabana, región encantadora situada a orillas del Lago Titikaka, famosa por la presencia de la imagen de la Virgen de Copacabana y su enorme legado ..
+		                </div>
+		            </div>
+		            
+		        </div>
+		 
+		        <span class="control left">‹</span>
+		        <span class="control right">›</span>
+		 
+		    </div>
+
+		</article>
+		<article id="bonus">
+			<div class="offers bg-blue">
+				<div class="icon">
+					<span class="up">Oferta</span>
+					<img src="images/icons/avion2.png" >
+					<span class="down">Especial</span>
+				</div>
+				<span class="title">Cuzco</span>
+				<span class="content">Vuelos diarios a Perú</span>
+			</div>
+			<div class="offers bg-red">
+				<div class="icon">
+					<span class="up">Oferta</span>
+					<img src="images/icons/avion.png" >
+					<span class="down">Especial</span>
+				</div>
+				<span class="title">Tarija</span>
+				<span class="content">Vuelos diarios a Tarija</span>
+			</div>
+			<div class="offers bg-yellow">
+				<div class="icon">
+					<span class="up">Oferta</span>
+					<i></i>
+					<span class="down">Especial</span>
+					<img src="images/icons/avion2.png" >
+				</div>
+				<span class="title">Cochabamba</span>
+				<span class="content">Vuelos diarios a Cochabamba</span>
+			</div>
+			<div class="offers bg-green">
+				<div class="icon">
+					<span class="up">Oferta</span>
+					<img src="images/icons/avion.png" >
+					<span class="down">Especial</span>					
+				</div>
+				<span class="title">Lima</span>
+				<span class="content">Vuelos diarios a Lima</span>
+			</div>
+		</article>
+	</section>
+	<footer>
+		<div id="afiliates">
+			<img src="images/wonderland.jpg" >
+			<img src="images/vision.jpg" >
+		</div>
+		<div id="directions">
+			<div class="col">
+				<h6>
+					<span class="left">Email :</span>
+					<span class="right"> <a href="mailto:info@amaszonas.com">info@amaszonas.com</a></span>
+				</h6>
+				<h6>
+					<span class="left">Telefono : </span> 
+					<span class="right">(591-2) 222-0848</span>
+				</h6>
+				<h6>Av. Saavedra N° 1649 - Miraflores La Paz, Bolivia</h6>
+				<h6>
+					<span class="left">
+						Linea Aérea
+						<span class="red"> Amas</span>
+						<span class="green">zonas</span>
+					</span>
+					<span class="right"> - Compañia de servicios de Transporte Aéreo</span>
+				</h6>		
+			</div>
+		</div>
+		<div id="zocial">
+			<figure>
+				<img src="images/icons/facebook.png" />
+				<!-- <figcaption>Facebook</figcaption> -->
+			</figure>
+			<figure>
+				<img src="images/icons/twitter.png" />
+				<!-- <figcaption>Twitter</figcaption> -->
+			</figure>
+			<figure>
+				<img src="images/icons/youtube.png" />
+				<!-- <figcaption>RSS</figcaption> -->
+			</figure>
+		</div>
+	</footer>
+	<div class="avgrund-cover"></div>
+	<aside id="default-popup" class="avgrund-popup">
+			<h2>Contacto</h2>
+			<p>
+				Ecribenos tu comentario.
+			</p>
+			<form>
+				<table>
+					<tr><td class="low"><span>Nombre</span></td><td><input type="text" class="input-control text"/></td></tr>
+					<tr><td class="low"><span>Correo</span></td><td><input type="email" class="input-control text"/></td></tr>
+					<tr><td class="low"><span>Asunto</span></td><td><input type="text" class="input-control text"/></td></tr>
+					<tr><td class="low"><span>Mensaje</span></td></tr>
+					<tr  colspan='2'>
+						<td>
+							<textarea>
+							</textarea>
+						</td>
+					</tr>
+				</table>
+			</form>
+			<button onclick="javascript:closeDialog();">Cerrar</button>
+			<button >Enviar</button>
+		</aside>
+</body>
+</html>
